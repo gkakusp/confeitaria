@@ -10,7 +10,7 @@ def inicial():
 
 @app.route('/contato')  # Rota para a página de contato
 def contato():
-    return render_template('contato.html')
+    return render_template('contato2.html')
 
 
 if __name__ == '__main__':

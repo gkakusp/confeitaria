@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academia de Jiu-Jitsu</title>
+   <link rel="stylesheet" href="{{ url_for('static', filename='css/contato2.css') }}"></head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="img-div"><img src="{{ url_for('static', filename='img/logosquared.png') }}"></div>
+            <nav>
+                <ul>
+                    <li><a href="/">Início</a></li>
+                    <li><a href="/">Sobre</a></li>
+                    <li><a href="/">Aulas</a></li>
+                    <li><a href="/contato">Contato</a></li>
+                    <li><a href="/">Localização</a></li>
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+
+           <div class="contact-form">
+        <h2>Entre em Contato</h2>
+        <form action="enviar_formulario.php" method="post">
+            <input type="text" id="name" name="name" placeholder="Seu Nome">
+            <input type="email" id="email" name="email" placeholder="Seu Email">
+            <input type="text" id="subject" name="subject" placeholder="Assunto">
+            <textarea id="message" name="message" placeholder="Descrição"></textarea>
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+    </section>
+
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Academia de Jiu-Jitsu. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
