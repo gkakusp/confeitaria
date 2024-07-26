@@ -4,18 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Academia de Jiu-Jitsu</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/jiu-jitsu.css') }}">
-</head>
+   <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}"></head>
+
 <body>
     <header>
         <div class="container">
-            <h1>Academia de Jiu-Jitsu</h1>
+            <div class="img-div"><img src="{{ url_for('static', filename='img/logosquared.png') }}"></div>
             <nav>
                 <ul>
-                    <li><a href="#">Início</a></li>
-                    <li><a href="#">Sobre</a></li>
-                    <li><a href="#">Aulas</a></li>
-                    <li><a href="#">Contato</a></li>
+                    <li><a href="/">Início</a></li>
+                    <li><a href="/">Sobre</a></li>
+                    <li><a href="/">Aulas</a></li>
+                    <li><a href="/contato">Contato</a></li>
                 </ul>
             </nav>
         </div>

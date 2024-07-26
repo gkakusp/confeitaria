@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+     <link rel="stylesheet" href="{{ url_for('static', filename='css/contato.css') }}"></head>
+</head>
+<body>
+
+<div class="img-div"><a href="/"><img src="{{ url_for('static', filename='img/logosquared.png') }}"></a></div>
+    <div class="contact-form">
+        <h2>Entre em Contato</h2>
+        <form action="enviar_formulario.php" method="post">
+            <input type="text" id="name" name="name" placeholder="Seu Nome">
+            <input type="email" id="email" name="email" placeholder="Seu Email">
+            <input type="text" id="subject" name="subject" placeholder="Assunto">
+            <textarea id="message" name="message" placeholder="Descrição">   </textarea>
+            <input type="submit" value="Enviar">&nbsp;&nbsp;&nbsp;
+            <a href="index.html" > <input type="submit" value="Início"></a>
+        </form>
+    </div>
+
+
+</body>
+</html>
